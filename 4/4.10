@@ -1,0 +1,37 @@
+#1
+text = input("Введите строку: ")
+length = len(text)
+
+if length == 0:
+    print(None)
+elif length <= 5:
+    print("short")
+elif 6 <= length <= 10:
+    print("normal")
+else:
+    print("long")
+
+#2
+number = int(input("Введите целое число: "))
+
+if number < 0:
+    number = 1_000_000
+    print(number)
+elif number == 0:
+    number = 2
+    result = number ** 2
+    print(result)
+else:
+    result = number ** 3
+    print(result)
+
+#3
+number_1 = 10
+number_2 = 100
+
+user_number = int(input("Введите ваше число: "))
+
+if number_1 < user_number < number_2:
+    print(True)
+else:
+    print(False)
