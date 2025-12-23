@@ -1,0 +1,36 @@
+#1
+text = input("Введите строку: ")
+
+if len(text) > 0:
+    last_char = text[-1].lower()
+    if last_char in ["я", "и", "е", "ю"]:
+        print(True)
+    else:
+        print(False)
+else:
+    print(False)
+
+#2
+a = float(input("Введите первую сторону: "))
+b = float(input("Введите вторую сторону: "))
+c = float(input("Введите третью сторону: "))
+
+if a > 0 and b > 0 and c > 0 and (a + b > c) and (a + c > b) and (b + c > a):
+    print(True)
+else:
+    print(False)
+
+#3
+num = int(input("Введите число: "))
+last_digit = abs(num % 10)
+
+if last_digit == 0:
+    result = num ** 10
+elif last_digit == 1:
+    result = num % 3
+elif last_digit == 2:
+    result = num // 2
+else:
+    result = num ** 2
+    
+print(result)
