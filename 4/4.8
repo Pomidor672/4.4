@@ -1,0 +1,38 @@
+#1
+def check_password(password):
+    if len(password) < 8 or password == "qwerty123":
+        return False
+    return True
+
+user_input = input("Введите пароль: ")
+result = check_password(user_input)
+print(result)
+
+#2
+p_c_number = 777
+
+def check_numbers(num1, num2):
+    if (num1 < p_c_number and num2 > p_c_number) or (num1 > p_c_number and num2 < p_c_number):
+        return True
+    return False
+
+n1 = int(input("Введите первое число: "))
+n2 = int(input("Введите второе число: "))
+result = check_numbers(n1, n2)
+print(result)
+
+#3
+lamp_1 = 0
+lamp_2 = 0
+
+print("Какую лампочку зажечь?")
+answer = input("Введите '1' или '2': ")
+
+if answer == "1":
+    lamp_1 = 1
+    print(f"Лампочка 1 зажжена. Состояние: lamp_1={lamp_1}, lamp_2={lamp_2}")
+elif answer == "2":
+    lamp_2 = 1
+    print(f"Лампочка 2 зажжена. Состояние: lamp_1={lamp_1}, lamp_2={lamp_2}")
+else:
+    print("Обе лампочки не горят")
