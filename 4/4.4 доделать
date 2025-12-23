@@ -2,3 +2,23 @@
 text = 'import information in one line'
 letter = input("Введите букву: ")
 print(letter in  text)
+
+#2
+a = float(input("Введите первую строну:"))
+b = float(input("Введите вторую строку:"))
+if a== b:
+    print(f"Это квадрат. Площадь: {a*b}")
+else:
+    print(f"Это прямоугольный треугольник. Пощадь: {a*b}")
+
+#3
+guestion = "Как твои дела?"
+answer = input(guestion).strip().lower()
+good_responses = ["хорошо","нормально","отлично"]
+bad_responses = ["плохо","не хорошо","отвратительно"]
+if answer in good_responses:
+    print("😊")
+elif answer in bad_responses:
+    print("😔")
+elif:
+    print("😐")
