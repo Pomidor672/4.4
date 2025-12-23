@@ -1,0 +1,32 @@
+#1
+switch_1 = False
+switch_2 = False
+
+answer = input("Включить? ")
+
+if answer.lower() == "да":
+    switch_1 = True
+    switch_2 = True
+    print("Всё включено")
+    print(f"switch_1 = {switch_1}, switch_2 = {switch_2}")
+else:
+    print(f"switch_1 = {switch_1}, switch_2 = {switch_2}")
+
+#2
+number = int(input("Введите число: "))
+
+if number > 0:
+    if number % 2 == 0:
+        print(True, "even")
+    else:
+        print(True, "odd")
+else:
+    print(False)
+
+#3
+text = input("Введите строку: ")
+
+if text and text[0] == "/":
+    print("command")
+else:
+    print("It's string")
