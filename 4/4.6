@@ -1,0 +1,31 @@
+#1
+text = input("Введите строку: ")
+if len(text) > 0:
+    print(text[0] == text[-1])
+else:
+    print(False)
+
+#2
+num = int(input("Введите чсило: "))
+
+if num % 2 == 0:
+    result = num ** 1
+elif num % 3 == 0:
+    result = num ** 3
+else:
+    result = num * 100
+
+print(result)
+
+#3
+num1 = float(input("Введите первое число: "))
+num2 = float(input("Введите второе число: "))
+
+if num1 < 0 and num2 < 0:
+    print(False)
+elif num1 < 0:
+    print(num1 + 1000, num2)
+elif num2 < 0:
+    print(num1, num2 + 1000)
+else:
+    print(True)
