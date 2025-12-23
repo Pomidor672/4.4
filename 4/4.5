@@ -1,1 +1,31 @@
+#1
+num1 = float(input("Введите первое число: "))
+num2 = float(input("Введите второе число: "))
 
+if num1 > num2:
+    result = num1 ** num2
+elif num2 > num1:
+    result = num2 ** num1
+else:
+    result = num1 + num2
+
+print(result)
+#2
+new_message = "Hello! How are you?"
+my_response = input("Введите ответ на сообщение: ")
+
+if new_message and my_response:
+    print(new_message[0] == my_response[0])
+else:
+    print(False)
+
+#3
+length1 = float(input("Введите длину первого отрезка: "))
+length2 = float(input("Введите длину второго отрезка: "))
+
+if length1 > length2:
+    print(f"Первый отрезок длинее на {length1 - length2}")
+elif length2 > length1:
+    print(f"Второй отрезок длинее на {length2 - length1}")
+else:
+    print("Отрезки равны")
